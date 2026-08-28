@@ -1,28 +1,19 @@
-# Modelo de Dados — Nidolab
+# Nidolab — Modelo de Dados
 
 ## Diagrama Entidade-Relacionamento
 
-O Nidolab precisará armazenar os dados dos usuários, das equipes criadas e dos Pokémon que fazem parte de cada equipe.
+O Nidolab precisa armazenar as equipes criadas pelo usuário e os Pokémon que fazem parte de cada equipe.
 
-Como um usuário pode criar várias equipes e uma equipe pode possuir vários Pokémon, será utilizada a entidade intermediária `EQUIPE_POKEMON` para representar a relação entre equipes e Pokémon.
+Uma equipe pode possuir até seis Pokémon, e um mesmo Pokémon pode fazer parte de diferentes equipes. Por isso, a relação entre `EQUIPE` e `POKEMON` é representada pela entidade intermediária `EQUIPE_POKEMON`.
 
 ```mermaid
 erDiagram
 
-    USUARIO ||--o{ EQUIPE : possui
-    EQUIPE ||--o{ EQUIPE_POKEMON : contem
+    EQUIPE ||--o{ EQUIPE_POKEMON : possui
     POKEMON ||--o{ EQUIPE_POKEMON : participa
-
-    USUARIO {
-        string id PK
-        string nome
-        string email
-        string senha
-    }
 
     EQUIPE {
         string id PK
-        string usuario_id FK
         string nome
         string geracao
         string estilo_jogo
@@ -45,12 +36,35 @@ erDiagram
     }
 ```
 
-### Entidades
+## Entidades
 
-**USUARIO:** armazena os dados necessários para identificação e login do usuário.
+### EQUIPE
 
-**EQUIPE:** armazena as equipes criadas pelos usuários, incluindo seu nome, geração e estilo de jogo.
+Representa um time criado pelo usuário.
 
-**POKEMON:** representa os Pokémon disponíveis para serem adicionados às equipes. Seus dados poderão ser obtidos por meio de uma API pública.
+* `id`: identificador único da equipe.
+* `nome`: nome escolhido para o time.
+* `geracao`: geração à qual o time está relacionado.
+* `estilo_jogo`: estilo de jogo escolhido para a equipe.
 
-**EQUIPE_POKEMON:** relaciona os Pokémon às equipes e registra a posição de cada Pokémon dentro da equipe.
+### POKEMON
+
+Representa um Pokémon que pode ser utilizado na criação de uma equipe.
+
+* `id`: identificador do Pokémon.
+* `numero`: número do Pokémon na Pokédex.
+* `nome`: nome do Pokémon.
+* `tipo_principal`: tipo principal do Pokémon.
+* `tipo_secundario`: segundo tipo, quando existir.
+* `imagem`: endereço da imagem do Pokémon.
+
+Os dados dos Pokémon poderão ser obtidos por meio de uma API pública.
+
+### EQUIPE_POKEMON
+
+Representa a associação entre uma equipe e os Pokémon que fazem parte dela.
+
+* `id`: identificador da associação.
+* `equipe_id`: identifica a equipe.
+* `pokemon_id`: identifica o Pokémon.
+* `posicao`: posição do Pokémon dentro da equipe, de 1 a 6.
