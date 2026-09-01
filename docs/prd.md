@@ -42,31 +42,36 @@ Além disso, o Nidolab permitirá salvar as equipes criadas para que possam ser 
 
 ---
 
-## US04 — Remover Pokémon da equipe
+## US04 - Preparar Pokémon dentro da equipe
+**Como usuário, eu quero poder preparar os ataques e estatisicas do Pokémon na minha equipe, visando total personalização**
+
+---
+
+## US05 — Remover Pokémon da equipe
 
 **Como usuário, eu quero remover um Pokémon da minha equipe, para que eu possa alterar a composição do meu time.**
 
 ---
 
-## US05 — Limitar equipe a seis Pokémon
+## US06 — Limitar equipe a seis Pokémon
 
 **Como usuário, eu quero ser informado quando tentar adicionar mais de seis Pokémon, para que minha equipe respeite o limite de integrantes do jogo.**
 
 ---
 
-## US06 — Nomear e salvar equipe
+## US07 — Nomear e salvar equipe
 
 **Como usuário, eu quero informar um nome para minha equipe e salvá-la, para que eu possa guardar a composição criada e consultá-la posteriormente.**
 
 ---
 
-## US07 — Visualizar equipes salvas
+## US08 — Visualizar equipes salvas
 
 **Como usuário, eu quero visualizar minhas equipes salvas, para que eu possa consultar as composições que criei anteriormente.**
 
 ---
 
-## US08 — Excluir equipe
+## US09 — Excluir equipe
 
 **Como usuário, eu quero excluir uma equipe salva, para que eu possa remover composições que não desejo mais manter.**
 
