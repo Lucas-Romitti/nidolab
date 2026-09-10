@@ -32,9 +32,9 @@ O protótipo das interfaces será desenvolvido no **Figma**, contemplando as ver
 * 📱 Mobile
 * 💻 Desktop
 
-### Protótipo no Figma
+### Protótipo no Stitch
 
-*(link será adicionado posteriormente)*
+https://stitch.withgoogle.com/projects/15789640935433994293
 
 ---
 
