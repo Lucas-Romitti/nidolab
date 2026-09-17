@@ -53,11 +53,12 @@ O projeto será disponibilizado posteriormente por meio do GitHub Pages.
 * **HTML5** — Estrutura das páginas.
 * **CSS3** — Estilização complementar.
 * **JavaScript** — Lógica e funcionalidades da aplicação.
-* **MaterializeCSS** — Framework CSS utilizado para componentes e layout responsivo.
+* **BootstrapCSS** — Framework CSS utilizado para componentes e layout responsivo, visto que o Bootstrap excede nesses quesitos.
 * **jQuery** — Manipulação do DOM, eventos e interatividade.
 
-### Backend / Persistência
 
+### Backend / Persistência
+* **PokéAPI** - API Utilizada para receber todas as informações individuais de cada elemento necessario referente ao pokémon e suas especificidades.
 * **JSON Server** — Utilizado para simular uma API REST e persistir os dados das equipes.
 
 ### Ferramentas de desenvolvimento
