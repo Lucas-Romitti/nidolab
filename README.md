@@ -190,8 +190,8 @@ As principais funcionalidades previstas para o Nidolab são:
 ### RA3 — Ferramentas de desenvolvimento
 
 * [ ] ID 15 — Node.js e NPM.
-* [ ] ID 16 — Git/GitHub e `.gitignore`.
-* [ ] ID 17 — README.md padronizado.
+* [ x ] ID 16 — Git/GitHub e `.gitignore`.
+* [ x ] ID 17 — README.md padronizado.
 * [ ] ID 18 — Organização modular dos arquivos.
 * [ ] ID 19 — ESLint e Prettier.
 

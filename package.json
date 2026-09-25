@@ -1,0 +1,30 @@
+{
+  "name": "nidolab",
+  "version": "1.0.0",
+  "description": "O **Nidolab** é uma aplicação web desenvolvida com o objetivo de facilitar a criação e organização de times para o jogo **Pokémon Champions**.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucas-Romitti/nidolab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lucas-Romitti/nidolab/issues"
+  },
+  "homepage": "https://github.com/Lucas-Romitti/nidolab#readme",
+  "dependencies": {
+    "jquery": "^4.0.0",
+    "uuid": "^14.0.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
